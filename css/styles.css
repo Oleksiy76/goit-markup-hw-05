@@ -384,6 +384,13 @@ body {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+
+  transition: background-color var(--duration-function);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: var(--hover-color);
 }
 
 .team-soc-icon {
@@ -673,6 +680,9 @@ body {
 
 .modal-close-btn {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 24px;
   right: 24px;
   width: 24px;
@@ -680,4 +690,12 @@ body {
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  transition: background-color var(--duration-function);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: #c7cadb;
 }
